@@ -15,6 +15,26 @@ $project-colors: (
 
 $theme-colors: map-merge($theme-colors, $project-colors);
 
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Then add additional custom code here
+
+nav {
+  .offcanvas-header {
+    justify-content: flex-end;
+  }
+
+  .navbar-toggler {
+    border: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+a {
+  color: #FFF;
+}

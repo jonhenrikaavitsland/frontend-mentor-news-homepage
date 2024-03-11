@@ -6,21 +6,23 @@
   <meta name="description" content="a frontend mentor challenge that i combine with school sessions in bootstrap and sass">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./dist/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <script defer src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <title>Frontend Mentor | News homepage</title>
 </head>
-<body>
+<body class="bg-almost-white">
   <header>
-    <nav class="navbar sticky-top">
+    <nav class="navbar navbar-expand-md sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Offcanvas navbar</a>
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="news homepage"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <img src="./assets/images/icon-menu.svg" alt="open menu">
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./assets/images/icon-menu-close.svg" alt="close menu"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -28,44 +30,45 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">New</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
               </li>
             </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </div>
     </nav>
   </header>
+  <main>
+    <div class="container">
+      <div class="div">
+        <img src="./assets/images/image-web-3-mobile.jpg" class="img-fluid d-md-none" alt="web 3.0">
+        <img src="./assets/images/image-web-3-desktop.jpg" class="img-fluid d-none d-md-block" alt="web 3.0">
+        <section>
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div>
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <a href="#" class="btn bg-light-vermilion link-light text-uppercase">Read more</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
 
-  The Bright Future of Web 3.0?
+  
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+  
 
-  Read more
+  
 
   New 
 
