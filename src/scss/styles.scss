@@ -2,11 +2,18 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
-$body-bg: #FFFDFA;
-$body-color: #5E607A;
-$body-secondary-color: #C5C6CE;
-$primary: #F15D51;
-$dark: #00001A;
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$project-colors: (
+  "light-vermilion": #F15D51,
+  "silver": #C5C6CE,
+  "dark-space-blue": #00001A,
+  "gunmetal": #5E607A,
+  "almost-white": #FFFDFA,
+);
+
+$theme-colors: map-merge($theme-colors, $project-colors);
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
